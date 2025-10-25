@@ -1,0 +1,120 @@
+{
+  "config": {
+    "totalTransactions": 1000,
+    "batchSize": 50,
+    "baseAmount": 1000000,
+    "quoteAmount": 2000000,
+    "mixBuySell": true,
+    "outputDir": "benchmark/order-placement"
+  },
+  "contractAddress": "0x8eC3609497EC136760fbe9067C8aB403A1d110dF",
+  "network": "arcologyDevNet",
+  "totalBatches": 20,
+  "totalTransactions": 1000,
+  "totalEstimatedGas": "100000000",
+  "averageGasPerTransaction": "100000",
+  "batches": [
+    {
+      "batchId": 0,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 1,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 2,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 3,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 4,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 5,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 6,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 7,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 8,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 9,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 10,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 11,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 12,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 13,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 14,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 15,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 16,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 17,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 18,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    },
+    {
+      "batchId": 19,
+      "transactionCount": 50,
+      "estimatedGas": "5000000"
+    }
+  ],
+  "generatedAt": "2025-10-26T06:47:41.524Z",
+  "description": "Pre-signed transaction data for benchmarking ParallelOrderBook concurrent execution on Arcology DevNet"
+}
