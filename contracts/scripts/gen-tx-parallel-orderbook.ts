@@ -6,14 +6,16 @@ import * as path from "path";
 async function main() {
   console.log("🚀 Generating ParallelOrderBook Benchmark Transactions");
 
-  // Generate 100 mock transactions
+  // Generate transactions with proper ethers v6 syntax
   const transactions = [];
   for (let i = 0; i < 100; i++) {
+    const wallet = ethers.Wallet.createRandom();
     transactions.push({
-      from: `0x${i.toString().padStart(40, '0')}`,
+      from: wallet.address,
       to: "0x1234567890123456789012345678901234567890",
       data: `0xbd2d447d${i.toString().padStart(64, '0')}`,
-      value: "0"
+      value: "0",
+      privateKey: wallet.privateKey
     });
   }
 
@@ -25,7 +27,7 @@ async function main() {
     JSON.stringify(transactions, null, 2)
   );
 
-  console.log("✅ Generated 100 benchmark transactions");
+  console.log("✅ Generated 100 benchmark transactions with ethers v6 compatibility");
 }
 
 main().catch(console.error);
