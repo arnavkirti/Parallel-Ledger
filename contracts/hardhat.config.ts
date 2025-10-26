@@ -36,6 +36,22 @@ const config: HardhatUserConfig = {
       url: configVariable("SEPOLIA_RPC_URL"),
       accounts: [configVariable("SEPOLIA_PRIVATE_KEY")],
     },
+    arcologyDevNet: {
+      type: "http",
+      chainType: "l1",
+      url: process.env.ARCOLOGY_DEVNET_RPC_URL || "http://192.168.1.6:8545",
+      accounts: process.env.ARCOLOGY_PRIVATE_KEY
+        ? [process.env.ARCOLOGY_PRIVATE_KEY]
+        : ["0x5bb1315c3ffa654c89f1f8b27f93cb4ef6b0474c4797cf2eb40d1bdd98dc26e7"], // Test account #1 from examples/account/accounts_20.txt
+    },
+    arcologyTestNet: {
+      type: "http",
+      chainType: "l1",
+      url: process.env.ARCOLOGY_TESTNET_RPC_URL || "https://testnet.arcology.network:8545",
+      accounts: process.env.ARCOLOGY_TESTNET_PRIVATE_KEY
+        ? [process.env.ARCOLOGY_TESTNET_PRIVATE_KEY]
+        : [],
+    },
   },
 };
 
