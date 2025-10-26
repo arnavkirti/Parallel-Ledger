@@ -1,0 +1,24 @@
+{
+  "totalTransactions": 30,
+  "successfulTransactions": 30,
+  "failedTransactions": 0,
+  "totalTimeMs": 733,
+  "transactionsPerSecond": 40.92769440654843,
+  "averageTimePerTx": 24.433333333333334,
+  "ordersPlaced": 30,
+  "ordersMatched": 30,
+  "speedupFactor": 3.478854024556617,
+  "theoreticalSequentialTime": 2550,
+  "actualParallelTime": 733,
+  "testAccounts": [
+    "0xaB01a3BfC5de6b5Fc481e18F274ADBdbA9B111f0",
+    "0x21522c86A586e696961b68aa39632948D9F11170",
+    "0xa75Cd05BF16BbeA1759DE2A66c0472131BC5Bd8D",
+    "0x2c7161284197e40E83B1b657e98B3bb8FF3C90ed",
+    "0x57170608aE58b7d62dCdC3cbDb564C05dDBB7eee",
+    "0x9F79316c20f3F83Fcf43deE8a1CeA185A47A5c45",
+    "0x9f9E0F23aFd5404b34006678c900629183c9A25d",
+    "0xd7cB260c7658589fe68789F2d678e1e85F7e4831"
+  ],
+  "timestamp": "2025-10-26T09:49:53.523Z"
+}
